@@ -6,6 +6,10 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Vebinar - Komiljon Xamidjonov</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:wght@400;500&display=swap"
+        rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-black main-bg px-3 overflow-x-hidden">
@@ -23,17 +27,33 @@
 
     <div class="flex flex-col grow gap-5 lg:gap-10 justify-center py-3 lg:py-5">
       <div class="bebas-neue text-4xl lg:text-6xl text-white uppercase text-center lg:text-left pt-5">
-        DASTURLASHDA <span class="text-[#FEFFD3]">0 DAN</span> NATIJAGACHA
+        DASTURLASHDA <span class="text-[#FEFFD3]">0 dan 1000$</span> daromadgacha
       </div>
 
       <div class="block lg:hidden relative">
-        <img class="w-3/4 block mx-auto" src="img/mentor@1x.png" srcset="img/mentor@1x.png 1x, img/mentor@2x.png 2x"
-             alt="Mentor image">
+        <picture class="block w-3/4 mx-auto aspect-[375/485]">
+          <source
+            srcset="img/mentor@2x.webp 2x, img/mentor@1x.webp 1x"
+            type="image/webp"
+          />
+
+          <source
+            srcset="img/mentor@2x.png 2x, img/mentor@1x.png 1x"
+            type="image/png"
+          />
+
+          <img
+            class="w-full h-full"
+            src="img/mentor@1x.png"
+            srcset="img/mentor@2x.png 2x, img/mentor@1x.png 1x"
+            alt="Rasm tavsifi"
+          />
+        </picture>
 
         <button
           data-main-button
           class="w-full h-16 rounded-full button-gradient bebas-neue text-[28px]">
-          JOY BAND QILISH
+          <span class="relative z-[1]">Bepul ishtirok etish</span>
         </button>
 
         <div
@@ -91,7 +111,7 @@
         <button
           data-main-button
           class="lg:w-3/4 h-20 rounded-full button-gradient bebas-neue text-[32px]">
-          Bepul ishtirok etish
+          <span class="relative z-[1]">Bepul ishtirok etish</span>
         </button>
 
         <div
@@ -116,7 +136,7 @@
     </div>
 
     <label class="block w-full mb-4 lg:mb-6">
-      <span class="block mb-1.5 sf-pro-400 text-[#48635B]">Ism</span>
+      <span class="block mb-1.5 inter-tight-400 text-[#48635B]">Ism</span>
       <input class="w-full h-12 px-4 rounded-[8px] lg:rounded-[12px] bg-[#F3F7F8] border border-[#bed4da]" id="name"
              type="text" placeholder="Ismingizni kiriting" name="name">
     </label>
@@ -139,7 +159,7 @@
     <button data-form-button
             class="w-full h-14 lg:h-16 mt-5 rounded-full bebas-neue text-2xl lg:text-[28px] uppercase button-gradient"
             type="submit">
-      Yuborish
+      <span class="relative z-[1]">Yuborish</span>
     </button>
 
     <img data-modal-close class="w-3 lg:w-4 aspect-square absolute top-6 right-6 cursor-pointer" src="img/x.svg"
